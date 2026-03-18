@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme inline {
+@theme {
   --color-bg: #F5EDE3;
   --color-bg-alt: #F0F5F0;
   --color-bg-dark: #1A1A1A;
@@ -17,26 +17,98 @@
   --color-instructor-bg: #D4CFC7;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F5EDE3;
+    color: #333333;
+    font-family: var(--font-lato), "Lato", sans-serif;
+    overflow-x: hidden;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer components {
+  /* Breath circle animation */
+  .animate-breathe {
+    animation: breathe 4s ease-in-out infinite;
+  }
+
+  /* Bounce arrow animation */
+  .animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+  }
+
+  /* Floating label styles */
+  .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 1rem 0.75rem 0.5rem;
+    border: 1px solid #E8E0D4;
+    border-radius: 4px;
+    background: transparent;
+    font-family: var(--font-lato), "Lato", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-input:focus {
+    border-color: #3D5A40;
+  }
+
+  .form-label {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    font-family: var(--font-lato), "Lato", sans-serif;
+    font-size: 1rem;
+    color: #777777;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .form-input:focus ~ .form-label,
+  .form-input:not(:placeholder-shown) ~ .form-label {
+    top: 0.25rem;
+    transform: translateY(0);
+    font-size: 0.75rem;
+    color: #3D5A40;
+  }
+
+  textarea.form-input ~ .form-label {
+    top: 1rem;
+    transform: translateY(0);
+  }
+
+  textarea.form-input:focus ~ .form-label,
+  textarea.form-input:not(:placeholder-shown) ~ .form-label {
+    top: 0.25rem;
+    font-size: 0.75rem;
+    color: #3D5A40;
+  }
+
+  select.form-input {
+    appearance: none;
+    cursor: pointer;
+  }
+
+  select.form-input ~ .form-label {
+    top: 0.25rem;
+    transform: translateY(0);
+    font-size: 0.75rem;
+    color: #3D5A40;
+  }
 }
 
-body {
-  background-color: #F5EDE3;
-  color: #333333;
-  font-family: var(--font-lato), "Lato", sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* Breath circle animation */
 @keyframes breathe {
   0%, 100% {
     transform: scale(0.95);
@@ -46,11 +118,6 @@ body {
   }
 }
 
-.animate-breathe {
-  animation: breathe 4s ease-in-out infinite;
-}
-
-/* Bounce arrow animation */
 @keyframes bounce-slow {
   0%, 100% {
     transform: translateY(0);
@@ -58,77 +125,6 @@ body {
   50% {
     transform: translateY(10px);
   }
-}
-
-.animate-bounce-slow {
-  animation: bounce-slow 2s ease-in-out infinite;
-}
-
-/* Floating label styles */
-.form-group {
-  position: relative;
-  margin-bottom: 1.5rem;
-}
-
-.form-input {
-  width: 100%;
-  padding: 1rem 0.75rem 0.5rem;
-  border: 1px solid #E8E0D4;
-  border-radius: 4px;
-  background: transparent;
-  font-family: var(--font-lato), "Lato", sans-serif;
-  font-size: 1rem;
-  color: #333333;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.form-input:focus {
-  border-color: #3D5A40;
-}
-
-.form-label {
-  position: absolute;
-  top: 50%;
-  left: 0.75rem;
-  transform: translateY(-50%);
-  font-family: var(--font-lato), "Lato", sans-serif;
-  font-size: 1rem;
-  color: #777777;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.form-input:focus ~ .form-label,
-.form-input:not(:placeholder-shown) ~ .form-label {
-  top: 0.25rem;
-  transform: translateY(0);
-  font-size: 0.75rem;
-  color: #3D5A40;
-}
-
-textarea.form-input ~ .form-label {
-  top: 1rem;
-  transform: translateY(0);
-}
-
-textarea.form-input:focus ~ .form-label,
-textarea.form-input:not(:placeholder-shown) ~ .form-label {
-  top: 0.25rem;
-  font-size: 0.75rem;
-  color: #3D5A40;
-}
-
-select.form-input {
-  appearance: none;
-  cursor: pointer;
-}
-
-select.form-input ~ .form-label {
-  top: 0.25rem;
-  transform: translateY(0);
-  font-size: 0.75rem;
-  color: #3D5A40;
 }
 
 /* Scrollbar styling */
