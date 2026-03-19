@@ -15,6 +15,7 @@ export const CLASSES: ClassItem[] = [
       "Temel duruslar ve nefes teknikleriyle bedeninizi ve zihninizi dengelemenin en guzel yolu. Yeni baslayanlar icin ideal.",
     duration: "60 dk",
     level: "Temel",
+    image: "/images/class-hatha.png",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ export const CLASSES: ClassItem[] = [
       "Dinamik akis hareketleriyle nefes ve bedeni senkronize edin. Guc ve esneklik bir arada.",
     duration: "75 dk",
     level: "Orta",
+    image: "/images/class-vinyasa.png",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ export const CLASSES: ClassItem[] = [
       "Yavas tempolu, derin germe odakli pratik. Bagli dokulari rahatlatir, ic huzur saglar.",
     duration: "90 dk",
     level: "Restoratif",
+    image: "/images/class-yin.png",
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ export const CLASSES: ClassItem[] = [
       "Rehberli meditasyon seanslari ile zihninizi sakinlestirin, farkindalik ve odaklanma gelistirin.",
     duration: "45 dk",
     level: "Herkes",
+    image: "/images/class-meditation.png",
   },
 ];
 
@@ -85,18 +89,21 @@ export const INSTRUCTORS: Instructor[] = [
     name: "Elif Dogan",
     title: "Kurucu & Bas Egitmen",
     bio: "15 yillik yoga deneyimi ve Hindistan'da aldigi egitimlerle Elif, ogrencilerine derin bir pratik sunuyor. Hatha ve Vinyasa uzmani.",
+    image: "/images/instructor-1.png",
   },
   {
     id: 2,
     name: "Ahmet Yilmaz",
     title: "Meditasyon Egitmeni",
     bio: "Zen ve mindfulness geleneklerinde egitim almis Ahmet, rehberli meditasyon seanslarinda huzur ve farkindalik kazandiriyor.",
+    image: "/images/instructor-2.png",
   },
   {
     id: 3,
     name: "Zeynep Kaya",
     title: "Yin Yoga Uzmani",
     bio: "Restoratif pratikler konusunda uzman Zeynep, bedenin dogal iyilesme surecini destekleyen yavas ve derin bir yaklasim sunuyor.",
+    image: "/images/instructor-3.png",
   },
 ];
 

@@ -4,6 +4,7 @@ export interface ClassItem {
   description: string;
   duration: string;
   level: string;
+  image: string;
 }
 
 export interface ScheduleCell {
@@ -18,6 +19,7 @@ export interface Instructor {
   name: string;
   title: string;
   bio: string;
+  image: string;
 }
 
 export interface Testimonial {

@@ -3,7 +3,6 @@
 import { INSTRUCTORS } from "@/constants";
 import SectionHeader from "./SectionHeader";
 import RevealOnScroll from "./RevealOnScroll";
-import Placeholder from "./Placeholder";
 
 export default function InstructorsSection() {
   return (
@@ -17,13 +16,11 @@ export default function InstructorsSection() {
           {INSTRUCTORS.map((instructor, index) => (
             <RevealOnScroll key={instructor.id} delay={index * 0.15}>
               <div className="flex flex-col items-center text-center">
-                <div className="w-[200px] h-[200px] mb-6">
-                  <Placeholder
-                    width="200px"
-                    height="200px"
-                    rounded
-                    bgColor="#D4CFC7"
-                    text="Fotograf"
+                <div className="w-[200px] h-[200px] mb-6 rounded-full overflow-hidden">
+                  <img
+                    src={instructor.image}
+                    alt={instructor.name}
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <h3

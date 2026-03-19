@@ -1,7 +1,6 @@
 "use client";
 
 import RevealOnScroll from "./RevealOnScroll";
-import Placeholder from "./Placeholder";
 
 export default function AboutSection() {
   return (
@@ -36,15 +35,13 @@ export default function AboutSection() {
           </div>
         </RevealOnScroll>
 
-        {/* Right: Placeholder Image */}
+        {/* Right: Studio Image */}
         <RevealOnScroll delay={0.15}>
-          <div className="aspect-square max-w-[500px] mx-auto w-full">
-            <Placeholder
-              width="100%"
-              height="100%"
-              bgColor="#E8E0D4"
-              text="Fotograf Alani"
-              className="rounded-sm"
+          <div className="aspect-square max-w-[500px] mx-auto w-full overflow-hidden rounded-sm">
+            <img
+              src="/images/about-studio.png"
+              alt="Nefes Yoga Studio"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </RevealOnScroll>

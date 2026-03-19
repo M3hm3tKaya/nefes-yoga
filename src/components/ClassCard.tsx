@@ -9,14 +9,13 @@ interface ClassCardProps {
 export default function ClassCard({ item }: ClassCardProps) {
   return (
     <div className="group bg-white border border-border rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer">
-      {/* Placeholder Image */}
-      <div className="aspect-[4/3] bg-placeholder-green flex items-center justify-center">
-        <span
-          className="text-accent/40 text-sm tracking-wide"
-          style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
-        >
-          Fotograf Alani
-        </span>
+      {/* Class Image */}
+      <div className="aspect-[4/3] overflow-hidden">
+        <img
+          src={item.image}
+          alt={item.name}
+          className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+        />
       </div>
 
       {/* Content */}
