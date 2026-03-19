@@ -14,13 +14,13 @@ export default function ContactSection() {
                 className="text-warm uppercase text-xs tracking-[0.2em] block mb-4"
                 style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
               >
-                ILETISIM
+                İLETİŞİM
               </span>
               <h2
                 className="text-text text-3xl md:text-4xl mb-8"
                 style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif" }}
               >
-                Bize Ulasin
+                Bize Ulaşın
               </h2>
 
               <form
@@ -36,7 +36,7 @@ export default function ContactSection() {
                     id="name"
                   />
                   <label htmlFor="name" className="form-label">
-                    Isim
+                    İsim
                   </label>
                 </div>
 
@@ -70,7 +70,7 @@ export default function ContactSection() {
                 <div className="form-group">
                   <select className="form-input" id="class-pref" defaultValue="">
                     <option value="" disabled>
-                      Ders seciniz...
+                      Ders seçiniz...
                     </option>
                     <option value="hatha">Hatha Yoga</option>
                     <option value="vinyasa">Vinyasa Flow</option>
@@ -100,7 +100,7 @@ export default function ContactSection() {
                   className="w-full bg-accent text-white py-3 text-sm uppercase tracking-[0.15em] transition-all duration-300 hover:bg-accent/90 rounded-sm"
                   style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
                 >
-                  Gonder
+                  Gönder
                 </button>
               </form>
             </div>
@@ -113,7 +113,7 @@ export default function ContactSection() {
                 className="text-text text-2xl mb-8"
                 style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif" }}
               >
-                Iletisim Bilgileri
+                İletişim Bilgileri
               </h3>
 
               <div className="space-y-6">
@@ -130,7 +130,7 @@ export default function ContactSection() {
                   >
                     Cihangir Mah. Akarsu Cad. No: 12/A
                     <br />
-                    Beyoglu, Istanbul
+                    Beyoğlu, İstanbul
                   </p>
                 </div>
 
@@ -169,7 +169,7 @@ export default function ContactSection() {
                     className="text-warm uppercase text-xs tracking-[0.15em] mb-2"
                     style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
                   >
-                    Calisma Saatleri
+                    Çalışma Saatleri
                   </h4>
                   <p
                     className="text-text text-sm leading-relaxed"

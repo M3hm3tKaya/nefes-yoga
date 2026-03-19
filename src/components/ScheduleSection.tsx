@@ -9,7 +9,7 @@ export default function ScheduleSection() {
     <section id="takvim" className="py-20 md:py-28 bg-bg-alt px-6">
       <div className="max-w-6xl mx-auto">
         <RevealOnScroll>
-          <SectionHeader label="TAKVIM" title="Haftalik Ders Programi" />
+          <SectionHeader label="TAKVİM" title="Haftalık Ders Programı" />
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.15}>

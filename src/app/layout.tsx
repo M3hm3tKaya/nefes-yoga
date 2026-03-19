@@ -20,7 +20,7 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Nefes Yoga Studio | Istanbul",
   description:
-    "Istanbul'un kalbinde yoga ve meditasyon studiosu. Hatha Yoga, Vinyasa Flow, Yin Yoga ve Meditasyon dersleri.",
+    "İstanbul'un kalbinde yoga ve meditasyon stüdyosu. Hatha Yoga, Vinyasa Flow, Yin Yoga ve Meditasyon dersleri.",
 };
 
 export default function RootLayout({

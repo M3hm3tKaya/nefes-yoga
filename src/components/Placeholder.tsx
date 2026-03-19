@@ -14,7 +14,7 @@ export default function Placeholder({
   height = "100%",
   rounded = false,
   bgColor = "#E8E0D4",
-  text = "Fotograf Alani",
+  text = "Fotoğraf Alanı",
   className = "",
 }: PlaceholderProps) {
   return (

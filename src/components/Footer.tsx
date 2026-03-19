@@ -17,8 +17,8 @@ export default function Footer() {
               className="text-[#888888] text-sm leading-relaxed"
               style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
             >
-              Istanbul&apos;un kalbinde, beden ve zihin dengesi icin kurulmus
-              bir yoga ve meditasyon studiosu.
+              İstanbul&apos;un kalbinde, beden ve zihin dengesi için kurulmuş
+              bir yoga ve meditasyon stüdyosu.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
               className="text-white text-sm uppercase tracking-[0.15em] mb-4"
               style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
             >
-              Hizli Erisim
+              Hızlı Erişim
             </h4>
             <nav className="flex flex-col gap-2">
               {NAV_LINKS.map((link) => (
@@ -73,7 +73,7 @@ export default function Footer() {
             className="text-[#666666] text-xs text-center"
             style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
           >
-            &copy; {new Date().getFullYear()} Nefes Yoga Studio. Tum haklari saklidir.
+            &copy; {new Date().getFullYear()} Nefes Yoga Studio. Tüm hakları saklıdır.
           </p>
         </div>
       </div>

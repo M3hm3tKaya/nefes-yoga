@@ -20,7 +20,7 @@ export default function BreathCircle() {
           className="text-warm uppercase tracking-[0.2em] text-sm"
           style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
         >
-          Yoga & Meditasyon Studiosu
+          Yoga & Meditasyon Stüdyosu
         </p>
       </div>
     </div>

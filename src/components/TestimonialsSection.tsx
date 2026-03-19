@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
     <section id="yorumlar" className="py-20 md:py-28 bg-bg-alt px-6">
       <div className="max-w-6xl mx-auto">
         <RevealOnScroll>
-          <SectionHeader label="YORUMLAR" title="Ogrencilerimizden" />
+          <SectionHeader label="YORUMLAR" title="Öğrencilerimizden" />
         </RevealOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">

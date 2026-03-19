@@ -28,7 +28,7 @@ export default function HeroSection() {
           className="inline-block border border-accent text-accent px-8 py-3 text-sm tracking-[0.15em] uppercase transition-all duration-300 hover:bg-accent hover:text-white"
           style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
         >
-          Deneme Dersine Katil
+          Deneme Dersine Katıl
         </a>
       </motion.div>
 
@@ -41,7 +41,7 @@ export default function HeroSection() {
         <a
           href="#hakkimizda"
           className="animate-bounce-slow block text-text-light text-2xl"
-          aria-label="Asagi kaydir"
+          aria-label="Aşağı kaydır"
         >
           <svg
             width="24"

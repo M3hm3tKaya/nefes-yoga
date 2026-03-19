@@ -19,17 +19,17 @@ export default function AboutSection() {
               className="text-text text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight"
               style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif" }}
             >
-              Ic Huzurunuzu Kesfedin
+              İç Huzurunuzu Keşfedin
             </h2>
             <p
               className="text-text-light text-base leading-relaxed mb-6"
               style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
             >
-              Nefes Yoga Studio, Istanbul&apos;un kalbinde, sehrin kaosundan
-              uzak bir huzur adasidir. 2018 yilinda kurulan studiomuzda, deneyimli
-              egitmenlerimiz esliginde bedeninizi ve zihninizi dengeye kavusturabilirsiniz.
-              Her seviyeden ogrenciye uygun derslerimizle, yoga ve meditasyonun
-              donusturucu gucunu kesfetmenize yardimci oluyoruz.
+              Nefes Yoga Studio, İstanbul&apos;un kalbinde, şehrin kaosundan
+              uzak bir huzur adasıdır. 2018 yılında kurulan stüdyomuzda, deneyimli
+              eğitmenlerimiz eşliğinde bedeninizi ve zihninizi dengeye kavuşturabilirsiniz.
+              Her seviyeden öğrenciye uygun derslerimizle, yoga ve meditasyonun
+              dönüştürücü gücünü keşfetmenize yardımcı oluyoruz.
             </p>
             <div className="w-[60px] h-[2px] bg-accent" />
           </div>
