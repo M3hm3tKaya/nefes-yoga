@@ -6,17 +6,17 @@ import RevealOnScroll from "./RevealOnScroll";
 
 export default function InstructorsSection() {
   return (
-    <section id="egitmenler" className="py-20 md:py-28 bg-bg px-6">
+    <section id="egitmenler" className="py-16 md:py-28 bg-bg px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <RevealOnScroll>
           <SectionHeader label="EĞİTMENLER" title="Deneyimli Rehberlerimiz" />
         </RevealOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
           {INSTRUCTORS.map((instructor, index) => (
             <RevealOnScroll key={instructor.id} delay={index * 0.15}>
               <div className="flex flex-col items-center text-center">
-                <div className="w-[200px] h-[200px] mb-6 rounded-full overflow-hidden">
+                <div className="w-[160px] h-[160px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] mb-6 rounded-full overflow-hidden">
                   <img
                     src={instructor.image}
                     alt={instructor.name}

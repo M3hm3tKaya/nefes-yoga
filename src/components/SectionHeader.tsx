@@ -13,7 +13,7 @@ export default function SectionHeader({ label, title }: SectionHeaderProps) {
         {label}
       </span>
       <h2
-        className="text-text font-serif text-3xl md:text-4xl lg:text-5xl"
+        className="text-text font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
         style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif" }}
       >
         {title}

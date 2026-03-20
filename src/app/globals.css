@@ -58,6 +58,9 @@
     color: #333333;
     outline: none;
     transition: border-color 0.3s ease;
+    min-height: 44px;
+    /* Prevent iOS zoom on input focus */
+    -webkit-text-size-adjust: 100%;
   }
 
   .form-input:focus {
@@ -124,6 +127,23 @@
   }
   50% {
     transform: translateY(10px);
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-breathe,
+  .animate-bounce-slow {
+    animation: none !important;
   }
 }
 

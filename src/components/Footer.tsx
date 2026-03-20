@@ -2,7 +2,7 @@ import { NAV_LINKS } from "@/constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-dark py-12 px-6">
+    <footer className="bg-bg-dark py-10 md:py-12 px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Logo & Description */}
@@ -30,12 +30,12 @@ export default function Footer() {
             >
               Hızlı Erişim
             </h4>
-            <nav className="flex flex-col gap-2">
+            <nav className="flex flex-col gap-1">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[#888888] text-sm hover:text-white transition-colors duration-300"
+                  className="text-[#888888] text-sm hover:text-white transition-colors duration-300 py-1.5 min-h-[44px] flex items-center md:min-h-0 md:py-0"
                   style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
                 >
                   {link.label}
@@ -52,12 +52,12 @@ export default function Footer() {
             >
               Sosyal Medya
             </h4>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {["Instagram", "Facebook", "YouTube"].map((social) => (
                 <a
                   key={social}
                   href="#"
-                  className="text-[#888888] text-sm hover:text-white transition-colors duration-300"
+                  className="text-[#888888] text-sm hover:text-white transition-colors duration-300 py-2 min-h-[44px] flex items-center md:min-h-0 md:py-0"
                   style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
                 >
                   {social}

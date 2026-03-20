@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 interface RevealOnScrollProps {
@@ -18,8 +18,18 @@ export default function RevealOnScroll({
 }: RevealOnScrollProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mql.matches);
+    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  }, []);
 
   const getInitial = () => {
+    if (prefersReducedMotion) return { opacity: 0 };
     switch (direction) {
       case "left":
         return { opacity: 0, x: -40 };
@@ -31,6 +41,7 @@ export default function RevealOnScroll({
   };
 
   const getAnimate = () => {
+    if (prefersReducedMotion) return { opacity: 1 };
     switch (direction) {
       case "left":
         return { opacity: 1, x: 0 };
@@ -47,8 +58,8 @@ export default function RevealOnScroll({
       initial={getInitial()}
       animate={isInView ? getAnimate() : getInitial()}
       transition={{
-        duration: 0.8,
-        delay,
+        duration: prefersReducedMotion ? 0.01 : 0.8,
+        delay: prefersReducedMotion ? 0 : delay,
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
       className={className}

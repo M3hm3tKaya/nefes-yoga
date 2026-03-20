@@ -4,7 +4,7 @@ import RevealOnScroll from "./RevealOnScroll";
 
 export default function AboutSection() {
   return (
-    <section id="hakkimizda" className="py-20 md:py-28 bg-bg px-6">
+    <section id="hakkimizda" className="py-16 md:py-28 bg-bg px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
         {/* Left: Text */}
         <RevealOnScroll delay={0}>
@@ -16,7 +16,7 @@ export default function AboutSection() {
               HAKKIMIZDA
             </span>
             <h2
-              className="text-text text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight"
+              className="text-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight"
               style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif" }}
             >
               İç Huzurunuzu Keşfedin

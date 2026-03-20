@@ -31,9 +31,12 @@ export default function RootLayout({
   return (
     <html
       lang="tr"
-      className={`${cormorant.variable} ${lato.variable} antialiased`}
+      className={`${cormorant.variable} ${lato.variable} antialiased overflow-x-hidden`}
     >
-      <body>{children}</body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className="overflow-x-hidden">{children}</body>
     </html>
   );
 }

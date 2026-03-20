@@ -17,7 +17,7 @@ export default function BreathCircle() {
           Nefes
         </h1>
         <p
-          className="text-warm uppercase tracking-[0.2em] text-sm"
+          className="text-warm uppercase tracking-[0.1em] sm:tracking-[0.2em] text-xs sm:text-sm px-4 text-center"
           style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
         >
           Yoga & Meditasyon Stüdyosu

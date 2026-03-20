@@ -4,7 +4,7 @@ import RevealOnScroll from "./RevealOnScroll";
 
 export default function ContactSection() {
   return (
-    <section id="iletisim" className="py-20 md:py-28 bg-bg px-6">
+    <section id="iletisim" className="py-16 md:py-28 bg-bg px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           {/* Left: Form */}
@@ -17,7 +17,7 @@ export default function ContactSection() {
                 İLETİŞİM
               </span>
               <h2
-                className="text-text text-3xl md:text-4xl mb-8"
+                className="text-text text-2xl sm:text-3xl md:text-4xl mb-6 sm:mb-8"
                 style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif" }}
               >
                 Bize Ulaşın
@@ -97,7 +97,7 @@ export default function ContactSection() {
 
                 <button
                   type="submit"
-                  className="w-full bg-accent text-white py-3 text-sm uppercase tracking-[0.15em] transition-all duration-300 hover:bg-accent/90 rounded-sm"
+                  className="w-full bg-accent text-white py-3 min-h-[44px] text-sm uppercase tracking-[0.15em] transition-all duration-300 hover:bg-accent/90 active:bg-accent/80 rounded-sm"
                   style={{ fontFamily: "var(--font-lato), 'Lato', sans-serif" }}
                 >
                   Gönder

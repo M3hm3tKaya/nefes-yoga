@@ -7,7 +7,7 @@ import RevealOnScroll from "./RevealOnScroll";
 
 export default function ClassesSection() {
   return (
-    <section id="dersler" className="py-20 md:py-28 bg-bg px-6">
+    <section id="dersler" className="py-16 md:py-28 bg-bg px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <RevealOnScroll>
           <SectionHeader label="DERSLER" title="Bedeninize Uygun Ders" />

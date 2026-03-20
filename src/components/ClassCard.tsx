@@ -19,7 +19,7 @@ export default function ClassCard({ item }: ClassCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="p-4 sm:p-5">
         <h3
           className="text-text font-bold text-xl mb-2"
           style={{ fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif" }}

@@ -6,14 +6,18 @@ import RevealOnScroll from "./RevealOnScroll";
 
 export default function ScheduleSection() {
   return (
-    <section id="takvim" className="py-20 md:py-28 bg-bg-alt px-6">
+    <section id="takvim" className="py-16 md:py-28 bg-bg-alt px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <RevealOnScroll>
           <SectionHeader label="TAKVİM" title="Haftalık Ders Programı" />
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.15}>
-          <div className="overflow-x-auto">
+          {/* Mobile scroll hint */}
+          <p className="text-xs text-text-light mb-2 md:hidden text-center">
+            ← Kaydırarak tüm programı görün →
+          </p>
+          <div className="overflow-x-auto -mx-4 sm:-mx-0 px-4 sm:px-0">
             <table className="w-full min-w-[640px] border-collapse">
               <thead>
                 <tr>
